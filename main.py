@@ -27,15 +27,18 @@ model = SqueezeNet(save_path=SAVE_PATH, sess=sess)
 params1 = {
     'sess' : sess,
     'model' : model,    
-    'content_image' : 'data/tubingen.jpg',
-    'style_image' : 'data/composition_vii.jpg',
-    'image_size' : 192,
-    'style_size' : 512,
+    'content_image' : 'data/mit_building.jpg',
+    'style_image' : 'data/gray_picasso.jpg',
+    'image_size' : 340,
+    'style_size' : 800,
     'content_layer' : 3,
-    'content_weight' : 5e-2, 
+    'content_weight' : 0.01, 
     'style_layers' : (1, 4, 6, 7),
-    'style_weights' : (20000, 500, 12, 1),
-    'tv_weight' : 5e-2
+    'style_weights' : (10, 2000, 300, 4),
+    'tv_weight' : 0.03,
 }
 
-style_transfer(**params1)
+#style_transfer(**params1)
+
+transferer = Style_Transferer_Squeezenet(**params1)
+transferer.generate_image(iter_num=2000, draw_every=1000)
