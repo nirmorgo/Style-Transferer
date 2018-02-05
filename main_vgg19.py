@@ -10,7 +10,6 @@ content_img = load_image(content_image_path, img_resize)
 style_img = load_image(style_image_path)
 plot_input_images(content_img, style_img)
 
-# Composition VII + Tubingen
 transferer_params = {
     'content_image' : content_img,
     'style_image' : style_img,
@@ -26,17 +25,15 @@ transferer_params = {
     'initial_lr': 12.5,  #optimizer learning rate at begining
     'decayed_lr': 3
     }
-
 transferer = Style_Transferer_VGG19(**transferer_params)
-#%%
+
 opt_params = {
         'iter_num':500, 
         'draw_every':200, 
         'print_every':50, 
         'decay_lr_at':500,
-        'initial_lr':None, 
-        'decayed_lr':None
+        'initial_lr':None, # can be used to update learning rate without initializing the entire graph
+        'decayed_lr':None  # can be used to update learning rate without initializing the entire graph
         }
-
 transferer.generate_image(**opt_params)
 
