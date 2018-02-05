@@ -31,7 +31,7 @@ opt_params = {
         'iter_num':500, 
         'draw_every':200, 
         'print_every':50, 
-        'decay_lr_at':500,
+        'decay_lr_at':350,
         'initial_lr':None, # can be used to update learning rate without initializing the entire graph
         'decayed_lr':None  # can be used to update learning rate without initializing the entire graph
         }
