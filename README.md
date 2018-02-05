@@ -20,5 +20,7 @@ you can use the default parameters defined on main_vgg19.py they work pretty wel
 A decent GPU. unless you like waiting for long periods of time.
 
 # Examples
-
+![alt text](https://i.imgur.com/b3w9XFj.jpg "fancy kitten")
 ![alt text](https://i.imgur.com/0P85lEa.jpg "pasta trump!")
+
+
