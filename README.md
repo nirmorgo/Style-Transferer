@@ -21,6 +21,4 @@ A decent GPU. unless you like waiting for long periods of time.
 
 # Examples
 ![alt text](https://i.imgur.com/b3w9XFj.jpg "fancy kitten")
-![alt text](https://i.imgur.com/uikd4kt.jpg "pasta dog!")
-
-
+![alt text](https://i.imgur.com/CJf7Lwi.jpg "pasta dog!")
